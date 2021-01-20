@@ -10,7 +10,7 @@ namespace AppTarefas
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Telas.Listar());
         }
 
         protected override void OnStart()
