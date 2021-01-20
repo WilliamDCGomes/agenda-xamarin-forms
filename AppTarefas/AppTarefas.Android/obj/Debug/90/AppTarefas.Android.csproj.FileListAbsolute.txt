@@ -526,3 +526,9 @@ C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\src\crc647c4c06
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\src\crc647c4c06b10f3352ff\MaterialSliderRenderer.java
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\src\crc647c4c06b10f3352ff\MaterialStepperRenderer.java
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\src\crc647c4c06b10f3352ff\MaterialTimePickerRenderer.java
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-mdpi\back.png
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-xhdpi\back.png
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-xxhdpi\back.png
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-xxxhdpi\back.png
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-hdpi\back.png
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\res\drawable-ldpi\back.png

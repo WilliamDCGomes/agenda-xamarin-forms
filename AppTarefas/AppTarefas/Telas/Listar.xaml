@@ -47,7 +47,11 @@
                     <Grid.RowDefinitions>
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    
+                    <Label Text="Tarefa 01">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="BtnVisualizar"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                     <Button Text="+" HorizontalOptions="End" TranslationY="-30" VerticalOptions="End" WidthRequest="75" HeightRequest="75" TextColor="White" BackgroundColor="#4043C9" CornerRadius="50" FontSize="36" Clicked="BtnCadastrar"/>
                 </Grid>
             </Frame>

@@ -21,5 +21,10 @@ namespace AppTarefas.Telas
         {
             Navigation.PushModalAsync(new Cadastrar());
         }
+
+        private void BtnVisualizar(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Telas.Visualizar());
+        }
     }
 }
