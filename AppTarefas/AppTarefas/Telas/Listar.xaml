@@ -47,7 +47,8 @@
                     <Grid.RowDefinitions>
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Button Text="+" HorizontalOptions="End" TranslationY="-30" VerticalOptions="End" WidthRequest="75" HeightRequest="75" TextColor="White" BackgroundColor="#4043C9" CornerRadius="50" FontSize="36"/>
+                    
+                    <Button Text="+" HorizontalOptions="End" TranslationY="-30" VerticalOptions="End" WidthRequest="75" HeightRequest="75" TextColor="White" BackgroundColor="#4043C9" CornerRadius="50" FontSize="36" Clicked="BtnCadastrar"/>
                 </Grid>
             </Frame>
         </Grid>

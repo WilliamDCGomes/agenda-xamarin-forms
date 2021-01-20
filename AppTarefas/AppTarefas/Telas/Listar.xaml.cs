@@ -16,5 +16,10 @@ namespace AppTarefas.Telas
         {
             InitializeComponent();
         }
+
+        private void BtnCadastrar(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Cadastrar());
+        }
     }
 }

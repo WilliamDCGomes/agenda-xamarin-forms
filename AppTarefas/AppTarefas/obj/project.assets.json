@@ -63,6 +63,18 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.Visual.Material/4.6.0.1180": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1180"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
       }
     }
   },
@@ -621,13 +633,37 @@
         "xamarin.forms.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Visual.Material/4.6.0.1180": {
+      "sha512": "xxeDqc6gM4LgqYKtIVozdhUT+LbmUqFUJ9OPxV+vJ9BRzDhy4I2wFxSbYyNFbEsOXdmlgclb0D1rykQ7mlboEQ==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.6.0.1180",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "buildTransitive/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.pdb",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.6.0.1180.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451"
+      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Forms.Visual.Material >= 4.6.0.1180"
     ]
   },
   "packageFolders": {
@@ -687,6 +723,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1451, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[4.6.0.1180, )"
           }
         },
         "imports": [
