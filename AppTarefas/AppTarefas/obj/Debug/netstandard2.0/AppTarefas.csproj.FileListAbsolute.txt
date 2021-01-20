@@ -1,0 +1,13 @@
+C:\AppTarefas\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.deps.json
+C:\AppTarefas\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.dll
+C:\AppTarefas\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\ref\AppTarefas.dll
+C:\AppTarefas\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.pdb
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.AssemblyInfoInputs.cache
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.AssemblyInfo.cs
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.csproj.CoreCompileInputs.cache
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.dll
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\ref\AppTarefas.dll
+C:\AppTarefas\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.pdb
