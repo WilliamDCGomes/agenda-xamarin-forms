@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj": {}
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj": {}
   },
   "projects": {
-    "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj": {
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
+        "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
         "projectName": "AppTarefas.Android",
-        "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
-        "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-        "outputPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\obj\\",
+        "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
+        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+        "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
-                "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
+              "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+                "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
               }
             }
           }
@@ -42,6 +42,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
@@ -58,20 +62,20 @@
         }
       }
     },
-    "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
+        "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
         "projectName": "AppTarefas",
-        "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
-        "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-        "outputPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\obj\\",
+        "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
+        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+        "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -98,6 +102,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
