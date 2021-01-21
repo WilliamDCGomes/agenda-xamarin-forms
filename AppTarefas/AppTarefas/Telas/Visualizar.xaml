@@ -27,15 +27,24 @@
                     </StackLayout.GestureRecognizers>
                     <Image Source="back.png" />
                 </StackLayout>
-                <Label Text="Comprar café" Margin="0, 20, 0, 0" TextColor="Black" Grid.Column="1" FontSize="20" FontFamily="MontserratBold"/>
+                <Label Text="{Binding Nome}" Margin="0, 20, 0, 0" TextColor="Black" Grid.Column="1" FontSize="20" FontFamily="MontserratBold"/>
             </Grid>
             <Frame HasShadow="False" Grid.Row="1" CornerRadius="30" TranslationY="30">
                 <StackLayout>
-                    <Label Text="03/03/2020" FontSize="16" FontFamily="MontserratRegular" TextColor="Black"/>
-                    <Label Text="8:00 - 8:30" FontSize="16" FontFamily="MontserratRegular" TextColor="#939393"/>
-                    <Label Text="Nota" FontFamily="MontserratBold" FontSize="20" TextColor="Black"/>
+                    <Label Text="{Binding Data, StringFormat='{0:dd/MM/yyyy}'}" FontSize="16" FontFamily="MontserratRegular" TextColor="Black"/>
+                    <Label FontSize="16" FontFamily="MontserratRegular" TextColor="#939393">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding HorarioInicial, StringFormat=\{0\\:hh:mm\}}" />
+                                <Span Text=" - " />
+                                <Span Text="{Binding HorarioFinal, StringFormat=\{0\\:hh:mm\}}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    
+                    <Label x:Name="LblTituloNota" Text="Nota" FontFamily="MontserratBold" FontSize="20" TextColor="Black"/>
                     <Label 
-                        Text="Café santa clara - comprar 4 unidades menor que 8 reais" 
+                        Text="{Binding Nota}" 
                         FontSize="14" 
                         FontFamily="MontserratRegular" 
                         TextColor="Black" />

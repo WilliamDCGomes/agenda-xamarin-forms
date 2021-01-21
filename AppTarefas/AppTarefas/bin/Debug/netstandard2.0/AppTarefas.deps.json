@@ -13,7 +13,8 @@
           "NETStandard.Library": "2.0.3",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Forms.Visual.Material": "4.6.0.1180"
+          "Xamarin.Forms.Visual.Material": "4.6.0.1180",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "AppTarefas.dll": {}
@@ -432,6 +433,14 @@
         "dependencies": {
           "Xamarin.Forms": "4.8.0.1451"
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -727,6 +736,11 @@
       "sha512": "sha512-xxeDqc6gM4LgqYKtIVozdhUT+LbmUqFUJ9OPxV+vJ9BRzDhy4I2wFxSbYyNFbEsOXdmlgclb0D1rykQ7mlboEQ==",
       "path": "xamarin.forms.visual.material/4.6.0.1180",
       "hashPath": "xamarin.forms.visual.material.4.6.0.1180.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
