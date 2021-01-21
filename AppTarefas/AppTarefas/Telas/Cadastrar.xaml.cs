@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppTarefas.Banco;
+using AppTarefas.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,18 @@ namespace AppTarefas.Telas
         private void FecharModal(object sender, EventArgs e)
         {
             Navigation.PopModalAsync();
+        }
+
+        private async void SalvarTarefa(object sender, EventArgs e)
+        {
+            Tarefa tarefa = new Tarefa();
+            tarefa.Nome = Nome.Text;
+            tarefa.Nota = Nota.Text;
+            tarefa.Data = Data.Date;
+            tarefa.HorarioInicial = HorarioInicial.Time;
+            tarefa.HorarioFinal = HorarioFinal.Time;
+            tarefa.Finalizada = false;
+            await new TarefaDB().CadastrarAsync(tarefa);
         }
     }
 }

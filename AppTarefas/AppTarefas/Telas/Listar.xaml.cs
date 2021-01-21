@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppTarefas.Banco;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,14 @@ namespace AppTarefas.Telas
         public Listar()
         {
             InitializeComponent();
+            //new TarefaDB().PesquisarAsync(DateTime.Now);
+            Task.Run(() =>
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    CVListaDeTarefas.ItemsSource = await new TarefaDB().PesquisarAsync(DateTime.Now);
+                });
+            });
         }
 
         private void BtnCadastrar(object sender, EventArgs e)

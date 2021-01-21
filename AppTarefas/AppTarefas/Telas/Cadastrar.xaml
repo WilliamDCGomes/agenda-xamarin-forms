@@ -24,18 +24,21 @@
                     </Label>
                 </StackLayout>
                 <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                    <DatePicker BackgroundColor="White"  TextColor="Black"/>
+                    <DatePicker x:Name="Data" BackgroundColor="White"  TextColor="Black"/>
                 </Frame>
                 <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                    <TimePicker BackgroundColor="White" TextColor="Black"/>
+                    <TimePicker x:Name="HorarioInicial" BackgroundColor="White" TextColor="Black"/>
                 </Frame>
                 <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                    <Entry BackgroundColor="White" Placeholder="Tarefa" PlaceholderColor="Black" TextColor="Black"/>
+                    <TimePicker x:Name="HorarioFinal" BackgroundColor="White" TextColor="Black"/>
                 </Frame>
                 <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                    <Editor BackgroundColor="White" AutoSize="TextChanges" HeightRequest="200" Placeholder="Nota" PlaceholderColor="Black" TextColor="Black"/>
+                    <Entry x:Name="Nome" BackgroundColor="White" Placeholder="Tarefa" PlaceholderColor="Black" TextColor="Black"/>
                 </Frame>
-                <Button Text="Adicionar" Visual="Default" Padding="20, 10" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="End"/>
+                <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
+                    <Editor x:Name="Nota" BackgroundColor="White" AutoSize="TextChanges" HeightRequest="200" Placeholder="Nota" PlaceholderColor="Black" TextColor="Black"/>
+                </Frame>
+                <Button Text="Adicionar" Clicked="SalvarTarefa" Visual="Default" Padding="20, 10" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="End"/>
             </StackLayout>
         </Frame>
     </ContentPage.Content>

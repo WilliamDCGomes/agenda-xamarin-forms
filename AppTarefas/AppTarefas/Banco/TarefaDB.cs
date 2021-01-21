@@ -20,32 +20,32 @@ namespace AppTarefas.Banco
         public async Task<List<Tarefa>> PesquisarAsync(DateTime data)
         {
             return await Banco.Tarefas.Where(
-                    a=>!a.Data.ToString().Equals(null) &&
+                    a=>!a.Data.Equals(null) &&
                     a.Data.Year == data.Year &&
                     a.Data.Month == data.Month &&
                     a.Data.Day == data.Day
                 ).ToListAsync();
         }
-        public async Task<bool> Cadastrar(Tarefa tarefa)
+        public async Task<bool> CadastrarAsync(Tarefa tarefa)
         {
             Banco.Tarefas.Add(tarefa);
             int linhas = await Banco.SaveChangesAsync();
             return (linhas > 0) ? true : false;
         }
-        public async Task<bool> Atualizar(Tarefa tarefa)
+        public async Task<bool> AtualizarAsync(Tarefa tarefa)
         {
             Banco.Tarefas.Update(tarefa);
             int linhas = await Banco.SaveChangesAsync();
             return (linhas > 0) ? true : false;
         }
-        public async Task<bool> Excluir(int id)
+        public async Task<bool> ExcluirAsync(int id)
         {
-            Tarefa tarefa = await Consultar(id);
+            Tarefa tarefa = await ConsultarAsync(id);
             Banco.Tarefas.Remove(tarefa);
             int linhas = await Banco.SaveChangesAsync();
             return (linhas > 0) ? true : false;
         }
-        public async Task<Tarefa> Consultar(int id)
+        public async Task<Tarefa> ConsultarAsync(int id)
         {
             return await Banco.Tarefas.FindAsync(id);
         }

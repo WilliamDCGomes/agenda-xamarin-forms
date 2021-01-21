@@ -52,6 +52,30 @@
                             <TapGestureRecognizer Tapped="BtnVisualizar"/>
                         </Label.GestureRecognizers>
                     </Label>
+                    <CollectionView x:Name="CVListaDeTarefas">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="4*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox />
+                                    <Label Grid.Column="1">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Nome}" />
+                                                <Span Text="&#10;" />
+                                                <Span Text="{Binding HorarioInicial}" />
+                                                <Span Text=" - " />
+                                                <Span Text="{Binding HorarioFinal}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                     <Button Text="+" HorizontalOptions="End" TranslationY="-30" VerticalOptions="End" WidthRequest="75" HeightRequest="75" TextColor="White" BackgroundColor="#4043C9" CornerRadius="50" FontSize="36" Clicked="BtnCadastrar"/>
                 </Grid>
             </Frame>
