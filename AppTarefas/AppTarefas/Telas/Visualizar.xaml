@@ -55,7 +55,10 @@
                         FontFamily="MontserratRegular" 
                         TextColor="Black" />
                     <StackLayout Orientation="Horizontal">
+                        
+                        <!--
                         <Ellipse WidthRequest="15" HeightRequest="15" Fill="{Binding Prioridade, Converter={StaticResource Prioridade}}" />
+                        -->
                         <Label Text="{Binding Prioridade}" FontSize="14" FontFamily="MontserratRegular" TextColor="Black" />
                     </StackLayout>
                 </StackLayout>

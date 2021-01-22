@@ -52,6 +52,27 @@ namespace AppTarefas.Telas
                     }
                 }
             });
+            mudaCor();
+        }
+
+
+        public void mudaCor()
+        {
+            string prioridade;
+            if (prioridade == "Baixa")
+            {
+                corPrioridade.Fill = "#00ABFF";
+                teste.Text = "dsds";
+            }
+            else if (prioridade == "Normal")
+            {
+                
+            }
+            else if (prioridade == "Alta")
+            {
+                
+            }
+
         }
 
         private void BtnCadastrar(object sender, EventArgs e)

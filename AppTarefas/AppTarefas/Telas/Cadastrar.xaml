@@ -60,9 +60,9 @@
                         <Editor x:Name="Nota" HeightRequest="200" Placeholder="   Nota" Style="{StaticResource EntradaCampoEditor}"/>
                     </Frame>
                     <Grid ColumnDefinitions="*,*,*">
-                        <RadioButton x:Name="RBBaixa" CheckedChanged="RBBaixa_CheckedChanged" Text="Baixa" TextColor="#00ABFF"/>
-                        <RadioButton x:Name="RBNormal" CheckedChanged="RBNormal_CheckedChanged" Grid.Column="1" Text="Normal" TextColor="#E0E00C"/>
-                        <RadioButton x:Name="RBAlta" CheckedChanged="RBAlta_CheckedChanged" Grid.Column="2" Text="Alta" TextColor="#FF6969"/>
+                        <RadioButton x:Name="RBBaixa" CheckedChanged="RBBaixa_CheckedChanged" Text="Baixa" TextColor="#00ABFF" BorderColor="#00ABFF"/>
+                        <RadioButton x:Name="RBNormal" CheckedChanged="RBNormal_CheckedChanged" Grid.Column="1" Text="Normal" TextColor="#E0E00C" BorderColor="#E0E00C"/>
+                        <RadioButton x:Name="RBAlta" CheckedChanged="RBAlta_CheckedChanged" Grid.Column="2" Text="Alta" TextColor="#FF6969" BorderColor="#FF6969"/>
                     </Grid>
                     <Button Text="Adicionar" Clicked="SalvarTarefa" Style="{StaticResource Botao}"/>
                 </StackLayout>

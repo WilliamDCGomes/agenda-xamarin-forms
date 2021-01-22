@@ -84,7 +84,8 @@
                                             </StackLayout.GestureRecognizers>
                                             <Label TextDecorations="{Binding Finalizada, Converter={StaticResource Tachado}}"  Text="{Binding Nome}" TextColor="Black" FontFamily="MontserratBold" FontSize="16"/>
                                             <StackLayout Orientation="Horizontal">
-                                                <Ellipse WidthRequest="15" HeightRequest="15" Fill="{Binding Prioridade, Converter={StaticResource Prioridade}}" />
+                                                <Label x:Name="teste"/>
+                                                <Ellipse x:Name="corPrioridade" WidthRequest="15" HeightRequest="15" Fill="{DynamicResource }}" />
                                                 <Label TextDecorations="{Binding Finalizada, Converter={StaticResource Tachado}}"  TextColor="#939393" FontFamily="MontserratLight" FontSize="12">
                                                     <Label.FormattedText>
                                                         <FormattedString>
