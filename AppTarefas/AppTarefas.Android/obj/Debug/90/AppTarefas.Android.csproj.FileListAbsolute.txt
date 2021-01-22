@@ -604,3 +604,5 @@ C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_ConvertResources
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.dll
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.pdb
