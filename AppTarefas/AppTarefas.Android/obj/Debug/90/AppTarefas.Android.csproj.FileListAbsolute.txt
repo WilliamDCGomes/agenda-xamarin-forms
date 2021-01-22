@@ -110,6 +110,8 @@ C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\FormsVie
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.Bcl.AsyncInterfaces.dll
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.Bcl.HashCode.dll
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.dll
+C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.pdb
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.Data.Sqlite.dll
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.DotNet.PlatformAbstractions.dll
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -604,5 +606,3 @@ C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_ConvertResources
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.dll
-C:\AppTarefas\AppTarefas\AppTarefas.Android\obj\Debug\90\android\assets\Microsoft.CSharp.pdb

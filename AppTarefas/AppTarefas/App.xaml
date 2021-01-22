@@ -8,6 +8,9 @@
             <Color x:Key="AzulComRoxo">#4043C9</Color>
             <Color x:Key="Branco">White</Color>
             <Color x:Key="Preto">Black</Color>
+            <Color x:Key="PrioridadeBaixa">#00ABFF</Color>
+            <Color x:Key="PrioridadeNormal">#E0E00C</Color>
+            <Color x:Key="PrioridadeAlta">#FF6969</Color>
             <Style x:Key="TituloCampo" TargetType="Label">
                 <Setter Property="FontFamily" Value="MontserratRegular" />
                 <Setter Property="FontSize" Value="16" />

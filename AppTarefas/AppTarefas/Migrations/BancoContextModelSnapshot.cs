@@ -40,6 +40,9 @@ namespace AppTarefas.Migrations
                     b.Property<string>("Nota")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Prioridade")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Tarefas");

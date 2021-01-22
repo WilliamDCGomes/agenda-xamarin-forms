@@ -42,7 +42,7 @@ namespace AppTarefas.Telas
         {
             InitializeComponent();
             AtualizarDataCalendario(DateTime.Now);
-            MessagingCenter.Subscribe<Listar, Tarefa>(this, "OnTarefaCadastrada", (sender, tarefa) =>
+             MessagingCenter.Subscribe<Listar, Tarefa>(this, "OnTarefaCadastrada", (sender, tarefa) =>
             {
                 if (Lista != null)
                 {

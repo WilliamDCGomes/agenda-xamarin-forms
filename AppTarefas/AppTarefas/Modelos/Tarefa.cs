@@ -13,5 +13,6 @@ namespace AppTarefas.Modelos
         public string Nome { get; set; }
         public string Nota { get; set; }
         public bool Finalizada { get; set; }
+        public string Prioridade { get; set; }
     }
 }

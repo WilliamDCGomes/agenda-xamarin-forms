@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#F5F6FA"
+             xmlns:conversor="clr-namespace:AppTarefas.Conversor"
              x:Class="AppTarefas.Telas.Visualizar">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conversor:PrioridadeConversor x:Key="Prioridade" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.ColumnDefinitions>
@@ -48,6 +54,10 @@
                         FontSize="14" 
                         FontFamily="MontserratRegular" 
                         TextColor="Black" />
+                    <StackLayout Orientation="Horizontal">
+                        <Ellipse WidthRequest="15" HeightRequest="15" Fill="{Binding Prioridade, Converter={StaticResource Prioridade}}" />
+                        <Label Text="{Binding Prioridade}" FontSize="14" FontFamily="MontserratRegular" TextColor="Black" />
+                    </StackLayout>
                 </StackLayout>
             </Frame>
         </Grid>

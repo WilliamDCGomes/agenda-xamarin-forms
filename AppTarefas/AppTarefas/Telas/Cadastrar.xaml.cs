@@ -14,14 +14,16 @@ namespace AppTarefas.Telas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Cadastrar : ContentPage
     {
+        public string Prioridade { get; set; }
         public Cadastrar()
         {
             InitializeComponent();
             LblData.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            //if (Device.RuntimePlatform == Device.Android || Device.RuntimePlatform)
-            //{
-            //HorarioInicial.Unfocused += HorarioInicial_Unfocused;
-            //}
+            RBNormal.IsChecked = true;
+            if (Device.RuntimePlatform == Device.Android || Device.RuntimePlatform == Device.iOS)
+            {
+                HorarioInicial.Unfocused += HorarioInicial_Unfocused;
+            }
         }
 
         private void FecharModal(object sender, EventArgs e)
@@ -38,6 +40,7 @@ namespace AppTarefas.Telas
             tarefa.HorarioInicial = HorarioInicial.Time;
             tarefa.HorarioFinal = HorarioFinal.Time;
             tarefa.Finalizada = false;
+            tarefa.Prioridade = this.Prioridade;
             if (await ValidacaoAsync(tarefa))
             {
                 if(await new TarefaDB().CadastrarAsync(tarefa))
@@ -45,14 +48,8 @@ namespace AppTarefas.Telas
                     MessagingCenter.Send<Listar, Tarefa>(new Listar(), "OnTarefaCadastrada", tarefa);
                     await Navigation.PopModalAsync();
                 }
-            }/*
-            bool certo = await new TarefaDB().CadastrarAsync(tarefa);
-            if (certo)
-            {
-                MessagingCenter.Send<Listar, Tarefa>(PaginaMessageCenter, "Adicionar");
-                await Navigation.PopModalAsync();
             }
-            */
+
         }
 
         private async Task<bool> ValidacaoAsync(Tarefa tarefa)
@@ -100,6 +97,21 @@ namespace AppTarefas.Telas
         private void HorarioFinal_Unfocused(object sender, FocusEventArgs e)
         {
             LblHorarioFinal.Text = ((TimePicker)sender).Time.ToString(@"hh\:mm");
+        }
+
+        private void RBBaixa_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            Prioridade = ((RadioButton)sender).Text;
+        }
+
+        private void RBNormal_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            Prioridade = ((RadioButton)sender).Text;
+        }
+
+        private void RBAlta_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            Prioridade = ((RadioButton)sender).Text;
         }
     }
 }
