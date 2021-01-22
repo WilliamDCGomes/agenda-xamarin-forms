@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="Transparent"
+             BackgroundColor="#F5F6FA"
              xmlns:conversor="clr-namespace:AppTarefas.Conversor"
              x:Class="AppTarefas.Telas.Listar">
     <ContentPage.Resources>
@@ -30,10 +30,10 @@
                 <Label Margin="20, 40, 0, 0">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span x:Name="DiaDaSemana" Text="-" FontFamily="MontserratRegular" FontSize="20" TextColor="Black"/>
+                            <Span x:Name="DiaDaSemana" Text="-" FontFamily="MontserratRegular" FontSize="30" TextColor="Black"/>
                             <Span Text="&#10;" />
-                            <Span x:Name="QuantidadeTarefas" Text="0" FontFamily="MontserratThin" FontSize="14" TextColor="#888888"/>
-                            <Span Text=" tarefas" FontFamily="MontserratThin" FontSize="14" TextColor="#888888"/>
+                            <Span x:Name="QuantidadeTarefas" Text="0" FontFamily="MontserratRegular" FontSize="14" TextColor="Black"/>
+                            <Span Text=" tarefas" FontFamily="MontserratRegular" FontSize="14" TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -43,8 +43,6 @@
                     </Frame.GestureRecognizers>
                     <StackLayout>
                         <DatePicker  x:Name="DPCalendario" DateSelected="DateSelectedAction" IsVisible="False" BackgroundColor="White" TextColor="Black"/>
-
-                        
                         <Label TextColor="White" HorizontalTextAlignment="Center">
                             <Label.FormattedText>
                                 <FormattedString>
@@ -88,7 +86,7 @@
                                                 <FormattedString>
                                                     <Span Text="{Binding Nome}" TextColor="Black" FontFamily="MontserratBold" FontSize="16"/>
                                                     <Span Text="&#10;" />
-                                                    <Span Text="{Binding HorarioInicial, StringFormat=\{0\\:hh:mm\}}" TextColor="#939393" FontFamily="MontserratLight" FontSize="12"/>
+                                                    <Span Text="{Binding HorarioInicial}, StringFormat=\{0\\:hh:mm\}}" TextColor="#939393" FontFamily="MontserratLight" FontSize="12"/>
                                                     <Span Text=" - "  TextColor="#939393" FontFamily="MontserratLight" FontSize="12"/>
                                                     <Span Text="{Binding HorarioFinal , StringFormat=\{0\\:hh:mm\}}" TextColor="#939393" FontFamily="MontserratLight" FontSize="12"/>
                                                 </FormattedString>

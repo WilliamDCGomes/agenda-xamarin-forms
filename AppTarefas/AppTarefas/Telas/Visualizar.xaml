@@ -21,11 +21,11 @@
                 <Grid.RowDefinitions>
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <StackLayout Margin="10, 0, 10, 30" Padding="20, 20, 0, 0">
+                <StackLayout Margin="10, 0, 50, 30" Padding="20, 20, 0, 0" >
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Voltar" />
                     </StackLayout.GestureRecognizers>
-                    <Image Source="back.png" />
+                    <Image Source="back.png"/>
                 </StackLayout>
                 <Label Text="{Binding Nome}" Margin="0, 20, 0, 0" TextColor="Black" Grid.Column="1" FontSize="20" FontFamily="MontserratBold"/>
             </Grid>

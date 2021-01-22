@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Visual="Material"
              BackgroundColor="Transparent"
              x:Class="AppTarefas.Telas.Cadastrar">
     <ContentPage.Content>
@@ -30,8 +29,8 @@
                         </Frame.GestureRecognizers>
                         <StackLayout Orientation="Horizontal" Padding="15">
                             <DatePicker IsVisible="False" Unfocused="Data_Unfocused" x:Name="Data"/>
-                            <Label Text="Data" FontFamily="MontserratRegular" FontSize="16" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                            <Label Text="" x:Name="LblData" VerticalTextAlignment="Center" FontFamily="MontserratLight" FontSize="16" TextColor="#888888"/>
+                            <Label Text=" Data" Style="{StaticResource TituloCampo}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            <Label Text="" x:Name="LblData" Style="{StaticResource ValorCampo}"/>
                             <Image Source="calendar.png" />
                         </StackLayout>
                     </Frame>
@@ -42,8 +41,8 @@
                         <StackLayout Orientation="Horizontal" Padding="15">
                             <TimePicker IsVisible="False" Unfocused="HorarioInicial_Unfocused" x:Name="HorarioInicial" BackgroundColor="White" TextColor="Black"/>
                             <TimePicker IsVisible="False" Unfocused="HorarioFinal_Unfocused" x:Name="HorarioFinal" BackgroundColor="White" TextColor="Black"/>
-                            <Label Text="Horário" FontFamily="MontserratRegular" FontSize="16" TextColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                            <Label VerticalTextAlignment="Center" FontFamily="MontserratLight" FontSize="16" TextColor="#888888">
+                            <Label Text=" Horário" Style="{StaticResource TituloCampo}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            <Label Style="{StaticResource ValorCampo}">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span x:Name="LblHorarioInicial" Text="Inicio"/>
@@ -55,12 +54,12 @@
                         </StackLayout>
                     </Frame>
                     <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                        <Entry x:Name="Nome" FontSize="16" FontFamily="MontserratRegular" BackgroundColor="White" Placeholder="Tarefa" PlaceholderColor="Black" TextColor="#888888"/>
+                        <Entry x:Name="Nome" Placeholder="   Tarefa" Style="{StaticResource EntradaCampoEntry}"/>
                     </Frame>
                     <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
-                        <Editor x:Name="Nota" FontSize="16" FontFamily="MontserratRegular" BackgroundColor="White" AutoSize="TextChanges" HeightRequest="200" Placeholder="Nota" PlaceholderColor="Black" TextColor="#888888"/>
+                        <Editor x:Name="Nota" HeightRequest="200" Placeholder="   Nota" Style="{StaticResource EntradaCampoEditor}"/>
                     </Frame>
-                    <Button Text="Adicionar" Clicked="SalvarTarefa" Visual="Default" Padding="20, 10" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="End"/>
+                    <Button Text="Adicionar" Clicked="SalvarTarefa" Style="{StaticResource Botao}"/>
                 </StackLayout>
             </Frame>
         </ScrollView>
