@@ -3260,24 +3260,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\supor\\.nuget\\packages\\": {},
+    "C:\\Users\\willi\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
+      "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
       "projectName": "AppTarefas.Android",
-      "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
-      "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-      "outputPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.Android\\obj\\",
+      "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\AppTarefas.Android.csproj",
+      "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+      "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3291,8 +3291,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
-              "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
+            "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+              "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
             }
           }
         }

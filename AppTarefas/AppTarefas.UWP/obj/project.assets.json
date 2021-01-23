@@ -13769,18 +13769,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\supor\\.nuget\\packages\\": {},
+    "C:\\Users\\willi\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AppTarefas\\AppTarefas\\AppTarefas.UWP\\AppTarefas.UWP.csproj",
+      "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.UWP\\AppTarefas.UWP.csproj",
       "projectName": "AppTarefas.UWP",
-      "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.UWP\\AppTarefas.UWP.csproj",
-      "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-      "outputPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas.UWP\\obj\\",
+      "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.UWP\\AppTarefas.UWP.csproj",
+      "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+      "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -13788,7 +13788,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -13802,8 +13802,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
-              "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
+            "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+              "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
             }
           }
         }

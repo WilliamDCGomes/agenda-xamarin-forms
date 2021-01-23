@@ -55,11 +55,16 @@
                         FontFamily="MontserratRegular" 
                         TextColor="Black" />
                     <StackLayout Orientation="Horizontal">
+                        <Ellipse x:Name="PrioridadeCor" WidthRequest="18" HeightRequest="15"/>
+                        <Label TextColor="{Binding Prioridade, Converter={StaticResource Prioridade}}" FontSize="14" FontFamily="MontserratRegular">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Prioridade " />
+                                    <Span Text="{Binding Prioridade}" x:Name="PrioridadeSet"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         
-                        <!--
-                        <Ellipse WidthRequest="15" HeightRequest="15" Fill="{Binding Prioridade, Converter={StaticResource Prioridade}}" />
-                        -->
-                        <Label Text="{Binding Prioridade}" FontSize="14" FontFamily="MontserratRegular" TextColor="Black" />
                     </StackLayout>
                 </StackLayout>
             </Frame>

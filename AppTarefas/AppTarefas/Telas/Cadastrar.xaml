@@ -59,10 +59,19 @@
                     <Frame Padding="0" HasShadow="False" CornerRadius="0" BorderColor="#EDEDED">
                         <Editor x:Name="Nota" HeightRequest="200" Placeholder="   Nota" Style="{StaticResource EntradaCampoEditor}"/>
                     </Frame>
-                    <Grid ColumnDefinitions="*,*,*">
-                        <RadioButton x:Name="RBBaixa" CheckedChanged="RBBaixa_CheckedChanged" Text="Baixa" TextColor="#00ABFF" BorderColor="#00ABFF"/>
-                        <RadioButton x:Name="RBNormal" CheckedChanged="RBNormal_CheckedChanged" Grid.Column="1" Text="Normal" TextColor="#E0E00C" BorderColor="#E0E00C"/>
-                        <RadioButton x:Name="RBAlta" CheckedChanged="RBAlta_CheckedChanged" Grid.Column="2" Text="Alta" TextColor="#FF6969" BorderColor="#FF6969"/>
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="0">
+                        <StackLayout Orientation="Horizontal" Grid.Column="0" >
+                            <RadioButton GroupName="PrioridadeSelect" x:Name="RBBaixa" CheckedChanged="RBBaixa_CheckedChanged"/>
+                            <Label Text="Baixa" VerticalTextAlignment="Center" TextColor="{StaticResource PrioridadeBaixa}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Column="1">
+                            <RadioButton GroupName="PrioridadeSelect" x:Name="RBNormal" CheckedChanged="RBNormal_CheckedChanged" Grid.Column="1"/>
+                            <Label Text="Normal" VerticalTextAlignment="Center" TextColor="{StaticResource PrioridadeNormal}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Grid.Column="2">
+                            <RadioButton GroupName="PrioridadeSelect" x:Name="RBAlta" CheckedChanged="RBAlta_CheckedChanged" Grid.Column="2"/>
+                            <Label Text="Alta" VerticalTextAlignment="Center" TextColor="{StaticResource PrioridadeAlta}"/>
+                        </StackLayout>
                     </Grid>
                     <Button Text="Adicionar" Clicked="SalvarTarefa" Style="{StaticResource Botao}"/>
                 </StackLayout>

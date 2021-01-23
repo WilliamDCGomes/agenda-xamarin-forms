@@ -11,7 +11,7 @@ namespace AppTarefas.Conversor
         public object Convert(object value, Type targettype, object parameter, CultureInfo culture)
         {
 
-            var prioridade = value as string;
+            string prioridade = value as string;
             if (prioridade == "Baixa")
             {
                 return App.Current.Resources["PrioridadeBaixa"];

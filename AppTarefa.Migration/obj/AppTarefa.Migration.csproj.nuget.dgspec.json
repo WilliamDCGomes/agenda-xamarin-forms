@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AppTarefas\\AppTarefa.Migration\\AppTarefa.Migration.csproj": {}
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefa.Migration\\AppTarefa.Migration.csproj": {}
   },
   "projects": {
-    "C:\\AppTarefas\\AppTarefa.Migration\\AppTarefa.Migration.csproj": {
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefa.Migration\\AppTarefa.Migration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AppTarefas\\AppTarefa.Migration\\AppTarefa.Migration.csproj",
+        "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefa.Migration\\AppTarefa.Migration.csproj",
         "projectName": "AppTarefa.Migration",
-        "projectPath": "C:\\AppTarefas\\AppTarefa.Migration\\AppTarefa.Migration.csproj",
-        "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-        "outputPath": "C:\\AppTarefas\\AppTarefa.Migration\\obj\\",
+        "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefa.Migration\\AppTarefa.Migration.csproj",
+        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+        "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefa.Migration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
-                "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
+              "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+                "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj"
               }
             }
           }
@@ -74,20 +74,20 @@
         }
       }
     },
-    "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
+    "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
+        "projectUniqueName": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
         "projectName": "AppTarefas",
-        "projectPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
-        "packagesPath": "C:\\Users\\supor\\.nuget\\packages\\",
-        "outputPath": "C:\\AppTarefas\\AppTarefas\\AppTarefas\\obj\\",
+        "projectPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\AppTarefas.csproj",
+        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
+        "outputPath": "D:\\Programing\\Agenda-Xamarin-Forms\\AppTarefas\\AppTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\supor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

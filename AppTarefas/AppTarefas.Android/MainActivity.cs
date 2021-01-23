@@ -20,8 +20,8 @@ namespace AppTarefas.Droid
             base.OnCreate(savedInstanceState);
             Xamarin.Forms.Forms.SetFlags(new string[] { 
                 "SwipeView_Experimental", 
-                "RadioButton_Experimental", 
-                "Shapes_Experimental" 
+                "RadioButton_Experimental",
+                "Shapes_Experimental"
             });
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

@@ -20,6 +20,7 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
+            
             <Grid >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
@@ -62,7 +63,10 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     
-                    <CollectionView x:Name="CVListaDeTarefas" EmptyView="Nenhuma tarefa">
+                    <CollectionView x:Name="CVListaDeTarefas">
+                        <CollectionView.EmptyView>
+                            <Label Text="Nenhuma tarefa cadastrada!" FontFamily="MontserratRegular" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </CollectionView.EmptyView>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <SwipeView BackgroundColor="White">
@@ -76,22 +80,28 @@
                                             <ColumnDefinition Width="50"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-
                                         <CheckBox Color="#707070" IsChecked="{Binding Finalizada}" CheckedChanged="CheckedChangedAction"/>
                                         <StackLayout Grid.Column="1">
                                             <StackLayout.GestureRecognizers>
                                                 <TapGestureRecognizer Tapped="BtnVisualizar" CommandParameter="{Binding .}"/>
                                             </StackLayout.GestureRecognizers>
                                             <Label TextDecorations="{Binding Finalizada, Converter={StaticResource Tachado}}"  Text="{Binding Nome}" TextColor="Black" FontFamily="MontserratBold" FontSize="16"/>
-                                            <StackLayout Orientation="Horizontal">
-                                                <Label x:Name="teste"/>
-                                                <Ellipse x:Name="corPrioridade" WidthRequest="15" HeightRequest="15" Fill="{DynamicResource }}" />
-                                                <Label TextDecorations="{Binding Finalizada, Converter={StaticResource Tachado}}"  TextColor="#939393" FontFamily="MontserratLight" FontSize="12">
+                                            <Label TextDecorations="{Binding Finalizada, Converter={StaticResource Tachado}}"  TextColor="#939393" FontFamily="MontserratLight" FontSize="12">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding HorarioInicial, StringFormat=\{0\\:hh:mm\}}" />
+                                                        <Span Text=" - "/>
+                                                        <Span Text="{Binding HorarioFinal , StringFormat=\{0\\:hh:mm\}}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <StackLayout Orientation="Horizontal" HeightRequest="15">
+                                                <Button IsEnabled="False" WidthRequest="15" CornerRadius="45" BackgroundColor="{Binding Prioridade, Converter={StaticResource Prioridade}}"/>
+                                                <Label TextColor="{Binding Prioridade, Converter={StaticResource Prioridade}}" FontFamily="MontserratLight" FontSize="12" VerticalOptions="Start">
                                                     <Label.FormattedText>
                                                         <FormattedString>
-                                                            <Span Text="{Binding HorarioInicial, StringFormat=\{0\\:hh:mm\}}" />
-                                                            <Span Text=" - "/>
-                                                            <Span Text="{Binding HorarioFinal , StringFormat=\{0\\:hh:mm\}}"/>
+                                                            <Span Text="Prioridade " />
+                                                            <Span Text="{Binding Prioridade}" />
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>

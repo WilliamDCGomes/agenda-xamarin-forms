@@ -1,6 +1,5 @@
 ﻿using AppTarefas.Banco;
 using AppTarefas.Modelos;
-using Java.Util;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,32 +51,13 @@ namespace AppTarefas.Telas
                     }
                 }
             });
-            mudaCor();
-        }
-
-
-        public void mudaCor()
-        {
-            string prioridade;
-            if (prioridade == "Baixa")
-            {
-                corPrioridade.Fill = "#00ABFF";
-                teste.Text = "dsds";
-            }
-            else if (prioridade == "Normal")
-            {
-                
-            }
-            else if (prioridade == "Alta")
-            {
-                
-            }
-
         }
 
         private void BtnCadastrar(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Cadastrar());
+            Cadastrar cadastrar = new Cadastrar();
+            Navigation.PushModalAsync(cadastrar);
+            cadastrar.listar = this;
         }
 
         private void BtnVisualizar(object sender, EventArgs e)
@@ -98,6 +78,7 @@ namespace AppTarefas.Telas
                 if (excluido)
                 {
                     Lista.Remove(tarefa);
+                    AtualizarDataCalendario(DateTime.Now);
                 }
             }
         }
@@ -112,7 +93,7 @@ namespace AppTarefas.Telas
             AtualizarDataCalendario(e.NewDate);
         }
 
-        private void AtualizarDataCalendario(DateTime data)
+        public void AtualizarDataCalendario(DateTime data)
         {
             Task.Run(() =>
             {
@@ -163,5 +144,6 @@ namespace AppTarefas.Telas
                 label.TextDecorations = TextDecorations.None;
             }
         }
+
     }
 }

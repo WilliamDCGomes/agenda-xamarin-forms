@@ -6,3 +6,11 @@ D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.
 D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.AssemblyInfoInputs.cache
 D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.AssemblyInfo.cs
 D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.csproj.CoreCompileInputs.cache
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.deps.json
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.dll
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\ref\AppTarefas.dll
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\bin\Debug\netstandard2.0\AppTarefas.pdb
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.dll
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\ref\AppTarefas.dll
+D:\Programing\Agenda-Xamarin-Forms\AppTarefas\AppTarefas\obj\Debug\netstandard2.0\AppTarefas.pdb

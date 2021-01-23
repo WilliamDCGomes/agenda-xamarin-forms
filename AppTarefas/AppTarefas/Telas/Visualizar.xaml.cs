@@ -16,6 +16,7 @@ namespace AppTarefas.Telas
         public Visualizar()
         {
             InitializeComponent();
+            SetCorPrioridade();
         }
         public Visualizar(Tarefa tarefa)
         {
@@ -25,11 +26,28 @@ namespace AppTarefas.Telas
             {
                 LblTituloNota.IsVisible = false;
             }
+            SetCorPrioridade();
         }
 
         private void Voltar(object sender, EventArgs e)
         {
             Navigation.PopAsync();
+        }
+
+        private void SetCorPrioridade()
+        {
+            if(PrioridadeSet.Text == "Baixa")
+            {
+                PrioridadeCor.Fill = Brush.DarkGreen;
+            }
+            else if (PrioridadeSet.Text == "Normal")
+            {
+                PrioridadeCor.Fill = Brush.DarkOrange;
+            }
+            else if (PrioridadeSet.Text == "Alta")
+            {
+                PrioridadeCor.Fill = Brush.DarkRed;
+            }
         }
     }
 }

@@ -15,6 +15,7 @@ namespace AppTarefas.Telas
     public partial class Cadastrar : ContentPage
     {
         public string Prioridade { get; set; }
+        public Listar listar = new Listar();
         public Cadastrar()
         {
             InitializeComponent();
@@ -40,16 +41,16 @@ namespace AppTarefas.Telas
             tarefa.HorarioInicial = HorarioInicial.Time;
             tarefa.HorarioFinal = HorarioFinal.Time;
             tarefa.Finalizada = false;
-            tarefa.Prioridade = this.Prioridade;
+            tarefa.Prioridade = Prioridade;
             if (await ValidacaoAsync(tarefa))
             {
                 if(await new TarefaDB().CadastrarAsync(tarefa))
                 {
                     MessagingCenter.Send<Listar, Tarefa>(new Listar(), "OnTarefaCadastrada", tarefa);
                     await Navigation.PopModalAsync();
+                    listar.AtualizarDataCalendario(DateTime.Now);
                 }
             }
-
         }
 
         private async Task<bool> ValidacaoAsync(Tarefa tarefa)
@@ -101,17 +102,17 @@ namespace AppTarefas.Telas
 
         private void RBBaixa_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            Prioridade = ((RadioButton)sender).Text;
+            Prioridade = "Baixa";
         }
 
         private void RBNormal_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            Prioridade = ((RadioButton)sender).Text;
+            Prioridade = "Normal";
         }
 
         private void RBAlta_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            Prioridade = ((RadioButton)sender).Text;
+            Prioridade = "Alta";
         }
     }
 }
